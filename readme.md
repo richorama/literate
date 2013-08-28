@@ -22,7 +22,7 @@ First it logs to the console:
 
 It exports a function as an example.
 
-    module.exports.useAsNormal = function()}{
+    module.exports.useAsNormal = function(){
       return "foo";
     }
 
