@@ -27,7 +27,7 @@ function parseJS(filename){
 	output.push("// This javascript file was auto generated.");
 	output.push("var __markdown = require('fs').readFileSync('" + filename + ".md').toString();");
 	fs.writeFileSync(filename + ".js", output.join("\n"));
-	return require(filename);
+	return require("../../" + filename);
 }
 
 function parseLine(line){
