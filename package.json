@@ -1,0 +1,15 @@
+{
+  "name": "literate",
+  "description": "Lightweight literal programming",
+  "version": "0.0.1",
+  "contributors": ["Richard Astbury <richard.astbury@gmail.com> (https://github.com/richorama)"],
+  "keywords": ["literate", "programming", "require", "markdown"],
+  "main": "index.js",
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richorama/literate.git"
+  },
+  "license": "MIT"
+}
