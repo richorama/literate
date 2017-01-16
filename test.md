@@ -29,7 +29,7 @@ module.exports.getx = function(){
 }
 ```
 
-## Apparently you can access a __dir variable
+## Apparently you can access a __markdown variable
 
 ```
 console.log(__markdown);

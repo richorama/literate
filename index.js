@@ -1,4 +1,6 @@
 var fs = require('fs');
+var path = require('path');
+var counter = 1;
 
 function parseJS(filename){
 	var output = [];
@@ -14,7 +16,7 @@ function parseJS(filename){
 				output.push(line);
 			} else {
 				if (line.indexOf('    ') == 0){
-					output.push(line);	
+					output.push(line);
 				} else {
 					output.push("// " + line);
 					parseLine(line).forEach(function(sub){
@@ -26,8 +28,8 @@ function parseJS(filename){
 	}
 	output.push("// This javascript file was auto generated.");
 	output.push("var __markdown = require('fs').readFileSync('" + filename + ".md').toString();");
-	fs.writeFileSync(filename + ".js", output.join("\n"));
-	return require("../../" + filename);
+	fs.writeFileSync(path.join(__dirname,"generated." + counter + ".js"), output.join("\n"));
+	return require(path.join(__dirname,"generated." + counter++ + ".js"));
 }
 
 function parseLine(line){

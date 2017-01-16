@@ -1,7 +1,7 @@
 {
   "name": "literate",
   "description": "Lightweight literal programming",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "contributors": ["Richard Astbury <richard.astbury@gmail.com> (https://github.com/richorama)"],
   "keywords": ["literate", "programming", "require", "markdown"],
   "main": "index.js",
